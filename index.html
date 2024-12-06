@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <!-- Font -->
+    <link rel="stylesheet" href="font/font.css">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="lexend-font">
+    <section id="navbar" class=" fixed top-0 left-0 right-0 mb-16 backdrop-blur-lg">
+
+        <!----------------------------- Navbar Start -------------------------------->
+        <div class="md:bg-[#F9F7F3] bg-none backdrop-blur-3xl z-50">
+            <div class="flex justify-between items-center w-[1170px] mx-auto p-6">
+                <!-- Blog Button -->
+                <div>
+                    <div>
+                        <a href="blog.html"> <button class="btn bg-[#B4F461] py-3 px-8">Blog</button></a>
+                    </div>
+                </div>
+                <div class=" flex items-center">
+                    <img src="assets/logo.png" alt="">
+                    <a class="btn btn-ghost text-xl ">Donate Bangladesh</a>
+                </div>
+                <!-- Navbar BDT -->
+                <div>
+                    <img class="mr-2" src="assets/coin.png" alt="" srcset="">
+                    <p><span>5500</span> BDT</p>
+                </div>
+            </div>
+        </div>
+        <!---------------------- Navbar End -------------------------->
+        
+        <!-- Donate and History Button  -->
+        <div class="text-center my-10">
+            <button class="btn bg-[#B4F461] py-3 px-8 mr-2">Donation</button>
+            <button class="btn py-3 px-8 border-2 border-[#1111114D]">History</button>
+        </div>
+    </section>
+
+
+    <main class="w-[1170px] mx-auto mt-32">
+        <div class="pt-32">
+            <!-- Card Section -->
+            <!-- Card- 1 -->
+            <div class="grid md:grid-cols-2 gap-8 border-2 border-[#1111111A] p-8 rounded-2xl mb-5">
+                <!-- Image -->
+                <div class="col-span-1">
+                    <img class="h-full w-full" src="assets/noakhali.png" alt="">
+                </div>
+                <!-- Card Body -->
+                <div class="space-y-6 col-span-1">
+                    <!-- Card BDT -->
+                    <div>
+                        <p class="bg-slate-300 flex w-28 items-center justify-center py-2 rounded-md"><img class="mr-2"
+                                src="assets/coin.png" alt="">
+                            <span class="mr-1">0</span>BDT
+                        </p>
+                    </div>
+                    <h4 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
+                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.</p>
+
+                    <!-- Card Input -->
+                    <input class="block w-full border border-[#1111111A] p-4 rounded-md" type="text"
+                        placeholder="Write Donation Amount">
+
+                    <!-- Card Donation Button -->
+                    <button onclick="my_modal_1.showModal()" class="btn bg-[#B4F461] py-3 px-8 w-full">Donation
+                        Now</button>
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+
+            <!-- Card- 2 -->
+            <div class="grid md:grid-cols-2 gap-8 border-2 border-[#1111111A] p-8 rounded-2xl mb-5">
+                <!-- Image -->
+                <div class="col-span-1">
+                    <img class="h-full w-full" src="assets/feni.png" alt="">
+                </div>
+                <!-- Card Body -->
+                <div class="space-y-6 col-span-1">
+                    <!-- Card BDT -->
+                    <div>
+                        <p class="bg-slate-300 flex w-28 items-center justify-center py-2 rounded-md"><img class="mr-2"
+                                src="assets/coin.png" alt="">
+                            <span class="mr-1">0</span>BDT
+                        </p>
+                    </div>
+                    <h4 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h4>
+                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
+                        loss.
+                        Your generous donation will help provide immediate aid, including food, clean water, and medical
+                        supplies, to those affected by this calamity. Together, we can offer crucial support and help
+                        rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
+                        difference. Please consider donating today to assist those in urgent need.</p>
+
+                    <!-- Card Input -->
+                    <input class="block w-full border border-[#1111111A] p-4 rounded-md" type="text"
+                        placeholder="Write Donation Amount">
+
+                    <!-- Card Donation Button -->
+                    <button onclick="my_modal_2.showModal()" class="btn bg-[#B4F461] py-3 px-8 w-full">Donation
+                        Now</button>
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+
+            <!-- Card- 3 -->
+            <div class="grid md:grid-cols-2 gap-8 border-2 border-[#1111111A] p-8 rounded-2xl mb-5">
+                <!-- Image -->
+                <div class="col-span-1">
+                    <img class="w-full" src="assets/quota-protest.png" alt="">
+                </div>
+                <!-- Card Body -->
+                <div class="space-y-6 col-span-1">
+                    <!-- Card BDT -->
+                    <div>
+                        <p class="bg-slate-300 flex w-28 items-center justify-center py-2 rounded-md"><img class="mr-2"
+                                src="assets/coin.png" alt="">
+                            <span class="mr-1">0</span>BDT
+                        </p>
+                    </div>
+                    <h4 class="text-xl font-bold">Aid for Injured in the Quota Movement</h4>
+                    <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and
+                        necessary
+                        supplies to those affected. By contributing, you help ensure that injured individuals receive
+                        the
+                        care and support they need during this challenging time. Every donation plays a vital role in
+                        alleviating their suffering and aiding in their recovery. Please consider making a donation to
+                        support these brave individuals in their time of need.</p>
+
+                    <!-- Card Input -->
+                    <input class="block w-full border border-[#1111111A] p-4 rounded-md" type="text"
+                        placeholder="Write Donation Amount">
+
+                    <!-- Card Donation Button -->
+                    <button onclick="my_modal_3.showModal()" class="btn bg-[#B4F461] py-3 px-8 w-full">Donation
+                        Now</button>
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+
+</html>
