@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-     <!-- Font -->
-     <link rel="stylesheet" href="font/font.css">
-     <!-- daisyUI -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="stylesheet" href="font/font.css">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
 
     <!-- Navbar Start -->
@@ -32,8 +34,130 @@
             </div>
         </div>
     </div>
-     <!-- Navbar End -->
-   
-    <h1>Welcome to blog</h1>
+    <!-- Navbar End -->
+
+    <main class="md:w-[1170px] mx-auto mt-10">
+        <!-- Accordion Start -->
+        <div class="p-5">
+            <div class="my-5 flex">
+                <h1 class="text-2xl font-bold">Important FAQ</h1>
+                <img class="w-7 ml-2" src="assets/question_13653791 (1).png" alt="">
+            </div>
+            <div class="collapse collapse-arrow border border-b-0">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model?</div>
+                <div class="collapse-content">
+                    <div>
+                        <h1 class="text-2xl font-extrabold pb-2">Introduction to the DOM</h1>
+                        <p>The Document Object Model (DOM) is the data representation of the objects that comprise the
+                            structure and content of a document on the web. This guide will introduce the DOM, look at
+                            how the DOM represents an HTML document in memory and how to use APIs to create web content
+                            and applications.</p>
+                        <h1 class="text-2xl font-extrabold py-2">What is the DOM?</h1>
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                            the page so that programs can change the document structure, style, and content. The DOM
+                            represents the document as nodes and objects; that way, programming languages can interact
+                            with the page.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border border-b-0">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <div>
+                        <p class="pb-3">JavaScript provides several methods to select DOM elements. Here are some of
+                            them:</p>
+                        <h5 class="py-2 text-xl font-bold">Using getElementById:</h5>
+                        <p>The getElementsByClassName method allows you to select elements by their class name. It
+                            returns a collection of all elements in the document with the specified class name.</p>
+                    </div>
+                    <div>
+                        <h5 class="py-2 text-xl font-bold">Using getElementsByClassName:</h5>
+                        <p>The getElementById method allows you to select an element by its ID. This method returns the
+                            element object if it finds an element with the specified ID, otherwise, it returns null.</p>
+                    </div>
+                    <div>
+                        <h5 class="py-2 text-xl font-bold">Using getElementsByTagName:</h5>
+                        <p>The getElementsByTagName method allows you to select elements by their tag name. It returns a
+                            collection of all elements in the document with the specified tag name.</p>
+                    </div>
+                    <div>
+                        <h5 class="py-2 text-xl font-bold">Using querySelector:</h5>
+                        <p>The querySelector method allows you to select the first element that matches a specified CSS
+                            selector(s) in the document.</p>
+                    </div>
+                    <div>
+                        <h5 class="py-2 text-xl font-bold">Using querySelectorAll:</h5>
+                        <p>The querySelectorAll method allows you to select all elements that match a specified CSS
+                            selector(s) in the document.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border border-b-0">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <div>
+                        <p>Event delegation in the DOM is a design pattern that attaches a single event listener to a
+                            parent element, instead of attaching multiple listeners to individual child elements.</p>
+                        <p>Event delegation is a powerful technique that simplifies event handling, improves
+                            performance, and enhances the flexibility of your code.</p>
+                        <p>It's useful because it improves performance, simplifies event handling, and supports dynamic
+                            elements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and style
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <div>
+                        <p>
+                            To manipulate an element's attributes and styles using the DOM in JavaScript, you can use
+                            various methods and properties. Here's a breakdown:</p>
+                        <h5 class="py-2 text-xl font-bold">Manipulating Attributes</h5>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">getAttribute()</p>
+                            <li class="ml-2">Retrieves the value of a specified attribute.</li>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">setAttribute()</p>
+                            <li class="ml-2">Sets or updates the value of a specified attribute.</li>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">removeAttribute()</p>
+                            <li class="ml-2">Removes a specified attribute.</li>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">Direct Property Access</p>
+                            <li class="ml-2">You can access attributes like id, src, href, etc., directly as properties.
+                            </li>
+                        </div>
+
+                        <h5 class="py-2 text-xl font-bold">Manipulating Style</h5>
+                        <p>You can manipulate the style property of an element or use classList to add/remove classes:
+                        </p>
+                        <div class="py-2">
+                            <p class="text-lg font-semibold">Direct Style Manipulation</p>
+                            <li class="ml-2">Modify specific CSS properties..</li>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">Adding Inline CSS</p>
+                            <li class="ml-2">Set multiple properties at once.</li>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-lg font-semibold">Working with classList</p>
+                            <li class="ml-2">Add, remove, toggle, or check classes.</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion End -->
+    </main>
 </body>
+
 </html>
